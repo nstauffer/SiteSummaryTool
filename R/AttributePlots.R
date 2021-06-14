@@ -1,3 +1,10 @@
+#' Attribute LMF data with values from polygon data
+#' @param TDat_LMF Data frame. LMF data as a data frame. Must contain the variables \code{PrimaryKey}, \code{Latitude_NAD83}, and \code{Longitude_NAD83}.
+#' @param shapefile_name Character string. The name of a the polygon shapefile to read in and apply attributes from.
+#' @param shapefile_path Character string. The full filepath to the location containing the shapefile named in \code{shapfile_name}.
+#' @param attribute_title Character string. The name of the variable in the shapefile to attribute \code{TDat_LMF} with.
+#' @returns A data frame containing the records from \code{TDat_LMF}, but only the variables \code{PrimaryKey} and whatever were inherited from the shapefile.
+#' @export
 AttributePlots <- function(TDat_LMF,
                            shapefile_name,
                            shapefile_path,
