@@ -25,5 +25,3 @@ Combine_AIM_LMF_Species <- function(TerrADat_Path,
   
   return(output)
 }
-
-
